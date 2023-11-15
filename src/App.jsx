@@ -22,8 +22,8 @@ function App() {
     setTodo((prev) =>
       prev.map((prevTodo) =>
         prevTodo.id === id
-          ? prevTodo
-          : { ...prevTodo, completed: !prevTodo.completed }
+          ? { ...prevTodo, completed: !prevTodo.completed }
+          : prevTodo
       )
     );
   };
